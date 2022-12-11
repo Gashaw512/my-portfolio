@@ -2,7 +2,9 @@ import Typewriter from 'typewriter-effect';
 
 const Type =()=>{
     return (
-        <Typewriter
+
+<div style={{ padding: 30, textAlign: "center" }}>
+ <Typewriter
         options = {{
             strings: [
                 "Full Stack Developer",
@@ -15,6 +17,7 @@ const Type =()=>{
         }
         }
         />
+        </div>
     )
 }
  export default Type;

@@ -9,7 +9,7 @@ const ParticlesConfig = {
     interactivity: {
       events: {
         onClick: {
-          enable: true,
+          // enable: true,
           mode: "push"
         },
         onHover: {
@@ -34,6 +34,7 @@ const ParticlesConfig = {
         }
       }
     },
+    
     particles: {
       color: {
         value: "#777"

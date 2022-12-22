@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo3.png";
 
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { AiFillContacts } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
+
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -95,7 +96,7 @@ const NavBar = () => {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
+                href="https://blogs.gashu.tech/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -105,12 +106,12 @@ const NavBar = () => {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/Gashaw512/my-portfolio"
-                target="_blank"
+                href="/contact"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <AiFillContacts style={{ fontSize: "1.2em" }} />{" "}
+                Contact Me
+              <AiOutlineArrowRight style={{ fontSize: "1em" }} /> 
               </Button>
             </Nav.Item>
           </Nav>

@@ -132,9 +132,9 @@ const AboutCard = () => {
                 </ListGroup>
               </Col>
             </Row>
-            <Row>
+            <Row className="tools">
               <Col md={3}>
-                <Card.Header className="skill-header">Tools I used</Card.Header>
+                <Card.Header className="skill-header">Tools </Card.Header>
                 <ListGroup
                   variant="flush"
                   className="list-group-item justify-content-center"

@@ -33,8 +33,7 @@ const ParticlesConfig = {
           duration: 0.4
         }
       }
-    },
-    
+    },   
     particles: {
       color: {
         value: "#777"
@@ -54,15 +53,15 @@ const ParticlesConfig = {
         enable: true,
         outMode: "bounce",
         random: false,
-        speed: 1,
+        speed: 1.2,
         straight: false
       },
       number: {
         density: {
           enable: true,
-          area: 800
+          area: 750
         },
-        value: 30
+        value: 40
       },
       opacity: {
         value: 0.8
@@ -89,6 +88,7 @@ const ParticlesConfig = {
           particles: {
             color: {
               value: "#ff8906"
+              // value: "#008906"
             }
           }
         }

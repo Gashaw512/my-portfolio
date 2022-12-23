@@ -2,14 +2,15 @@
 import Particle from "../Particle";
 import ContactHeader from "./ContactHeader";
 import ContactForm from "./ContactForm";
+import { Container } from "react-bootstrap";
 const Contact = () => {
   return (
     <section className="contact_section">
       <Particle />
-      <div className="contact_content">
+      <Container className="contact_content">
         <ContactHeader/>
         <ContactForm />
-      </div>
+      </Container>
     </section>
   );
 };

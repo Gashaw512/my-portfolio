@@ -17,7 +17,7 @@ const ContactForm = () => {
           <div className="text-center mt-4 mb-4  form_title">
             <p className="h4"> Write to Me </p>
           </div>
-          <Form
+          <Form className="form"
             onSubmit={(e) => {
               e.preventDefault();
               console.log("hello");

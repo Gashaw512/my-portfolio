@@ -3,7 +3,7 @@ import "./App.css";
 import "./style.css";
 import Home from "./components/Home/Home";
 import NavBar from "./components/Navbar";
-import Project from "./components/Projects";
+import Project from "./components/Project/Projects";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Footer from "./components/footer";

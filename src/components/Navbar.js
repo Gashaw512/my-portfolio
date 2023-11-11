@@ -96,7 +96,7 @@ const NavBar = () => {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.gashu.tech/"
+                href="https://know-what.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >

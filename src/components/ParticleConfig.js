@@ -5,6 +5,7 @@ const ParticlesConfig = {
       zIndex: -10
     },
   
+  
     fpsLimit: 60,
     interactivity: {
       events: {
@@ -17,6 +18,14 @@ const ParticlesConfig = {
           mode: "repulse"
         },
         resize: true
+      },
+      Image:{
+        src: "../Assets/profile1.jpg",
+        width: 100,
+        height: 100
+      },
+      background:{
+        color: "#0d47a1",
       },
       modes: {
         bubble: {
@@ -83,7 +92,7 @@ const ParticlesConfig = {
         },
         options: {
           background: {
-            color: "#0f0e17"
+             color: "#0f0e17",
           },
           particles: {
             color: {

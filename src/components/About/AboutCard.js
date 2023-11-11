@@ -1,5 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
-import skill from "../../Assets/skills.jfif";
+// import skill from "../../Assets/skills.jfif";
+import skill from "../../Assets/skilll.png";
 import ListGroup from "react-bootstrap/ListGroup";
 import {
   FaBootstrap,
@@ -24,18 +25,30 @@ const AboutCard = () => {
   return (
     <Row className="card-container">
       <Card className="card">
+        <Card.Header>
+          <Row fluid className="justify-content-center skill-heading">
+            Technical Skills
+          </Row>
+        </Card.Header> 
         <Card.Body variant="primary">
-          <Card.Img variant="top" src={skill} height={300} />
+          <Container className="justify-content-center"></Container>
           <Container className="justify-content-center">
             <Row className="justify-content-center">
-            <Col md={3}>
+              <Row>
+                <img variant="top" src={skill} alt='Skill'/>
+              </Row>
+              <Col md={3} className="skillContainer">
                 <Card.Header className="skill-header">
                   Programming Language
                 </Card.Header>
                 <ListGroup variant="flush" className="list-group-item">
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.w3schools.com/js/DEFAULT.asp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <DiJavascript1 />
                       </a>{" "}
                     </span>{" "}
@@ -43,7 +56,11 @@ const AboutCard = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://www.javatpoint.com/java-tutorial" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.javatpoint.com/java-tutorial"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaJava />
                       </a>{" "}
                     </span>{" "}
@@ -51,7 +68,11 @@ const AboutCard = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://www.w3schools.com/python/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.w3schools.com/python/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <DiPython />
                       </a>
                     </span>
@@ -59,7 +80,11 @@ const AboutCard = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://www.programiz.com/cpp-programming" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.programiz.com/cpp-programming"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <CgCPlusPlus />
                       </a>
                     </span>
@@ -68,7 +93,7 @@ const AboutCard = () => {
                 </ListGroup>
               </Col>
 
-              <Col md={3}>
+              <Col md={3} className="skillContainer">
                 <Card.Header className="skill-header">
                   Frontend Technology
                 </Card.Header>
@@ -76,7 +101,11 @@ const AboutCard = () => {
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
                       {" "}
-                      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaReact />
                       </a>{" "}
                     </span>{" "}
@@ -84,7 +113,11 @@ const AboutCard = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://vuejs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaVuejs />
                       </a>
                     </span>{" "}
@@ -92,7 +125,11 @@ const AboutCard = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://getbootstrap.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaBootstrap />
                       </a>{" "}
                     </span>
@@ -100,22 +137,30 @@ const AboutCard = () => {
                   </ListGroup.Item>
                 </ListGroup>
               </Col>
-              <Col md={3}>
+              <Col md={3} className="skillContainer">
                 <Card.Header className="skill-header">
-                  BackendTechnology
+                  Backend Technology
                 </Card.Header>
                 <ListGroup variant="flush" className="list-group-item">
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://nodejs.org/en/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaNode />
                       </a>{" "}
                     </span>{" "}
                     Node JS
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
-                    <span className="tech-icon" >
-                      <a href="https://laravel.com/" target="_blank"  rel="noopener noreferrer" style={{ color: "black" }}>
+                    <span className="tech-icon">
+                      <a
+                        href="https://laravel.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaLaravel />
                       </a>{" "}
                     </span>{" "}
@@ -123,7 +168,11 @@ const AboutCard = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
-                      <a href="https://spring.io/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://spring.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <SiSpringboot />
                       </a>{" "}
                     </span>{" "}
@@ -131,9 +180,7 @@ const AboutCard = () => {
                   </ListGroup.Item>
                 </ListGroup>
               </Col>
-            </Row>
-            <Row className="tools">
-              <Col md={3}>
+              <Col md={3} className="skillContainer">
                 <Card.Header className="skill-header">Tools </Card.Header>
                 <ListGroup
                   variant="flush"
@@ -141,33 +188,57 @@ const AboutCard = () => {
                 >
                   <ListGroup.Item className="skill-list justify-content-center">
                     <span className="tech-icon">
-                      <FaGithubSquare  />
+                    <a
+                        href="https://spring.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      ><FaGithubSquare /></a>
+                      
                     </span>{" "}
                     Github
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
                       {" "}
-                      <SiVisualstudio />
+                      <a
+                        href="https://spring.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      > <SiVisualstudio /></a>
                     </span>{" "}
                     Visual Studio
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
                       {" "}
-                      <SiIntellijidea  />
+                      <a
+                        href="https://spring.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      ><SiIntellijidea /></a>
+                      
                     </span>{" "}
                     IntelliJ IDEA
                   </ListGroup.Item>
                   <ListGroup.Item className="skill-list">
                     <span className="tech-icon">
+                    <a
+                        href="https://spring.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                       <SiJira />
+                      </a>
+                     
                     </span>{" "}
                     Jira
                   </ListGroup.Item>
                 </ListGroup>
               </Col>
             </Row>
+            {/* <Row className="tools">
+              
+            </Row> */}
           </Container>
           {/* <Button variant="primary">Go somewhere</Button> */}
         </Card.Body>

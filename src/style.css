@@ -4,6 +4,7 @@ html {
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
   );
+  /* https://www.hotsex.tv/mom/ */
 
   --image-gradient: linear-gradient(
     to bottom left,
@@ -62,13 +63,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(135, 216, 121, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgrgba(97, 211, 104, 0.77); 
+  background: rgrgba(135, 211, 104, 0.77);
   border-radius: 12px;
 }
 
@@ -88,16 +89,15 @@ button:focus {
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
 }
-
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
 }
 
- .navbar-toggler span {
+.navbar-toggler span {
   display: block !important;
-  background-color: #00cc78 !important; 
+  background-color: #00cc78 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -105,7 +105,7 @@ button:focus {
   transform: rotate(0deg) !important;
   left: 0 !important;
   opacity: 1 !important;
-} 
+}
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
@@ -194,7 +194,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #00af99; 
+  background: #00af99;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -242,22 +242,17 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-/* #tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-} */
 
 .home-header {
   padding-top: 80px !important;
+  align-item:center !important;
+  justify-content: center;
 }
 
 .home-section {
   position: relative;
   z-index: 1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg); 
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg);  */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -404,8 +399,9 @@ button:focus {
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
+  position: fixed !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 10px !important ;
   z-index: 1;
 }
 .footer-copywright {
@@ -519,14 +515,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color:#00cc99  !important;
-  border-color: #00cc99  !important;
+  background-color: #00cc99 !important;
+  border-color: #00cc99 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
   background-color: #00cc80 !important;
-  border-color:#00cc80  !important;
+  border-color: #00cc80 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -544,17 +540,161 @@ button:focus {
 /* --------- */
 
 .about-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  position: relative;
+  z-index: 1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 50px !important;
+  padding-top: 20px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  width: 100% !important;
+  background-color: transparent !important;
+  left: 0;
+  right: 0;
+  bottom:0;
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg);  */
 }
 
+.about-content {
+  position: relative !important;
+  padding-top: 150px !important;
+  /* padding-bottom: 30px !important; */
+  /* background-image: var(--section-background-color) !important; */
+  color: white !important;
+  padding: 6rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
+  top: 0;
+  left: 0;
+}
+
+.card-container {
+  max-width: 100% !important;
+  padding-top: 80px !important;
+  padding-left:  35px !important;
+  padding-right: 0px !important;
+  left:0;
+  right:0 !important;
+  z-index: 1;
+  background-color: transparent !important;
+  /* background-image:'./Assets/skill.svg' !important; */
+}
+.card {
+  /* background-color: #046307  !important; */
+  background-color: #3B2F2F !important ;
+  max-width: 100%;
+  padding-bottom: 80px !important;
+  padding-right:0px !important;
+}
+.list-group-item {
+  /* background-color: #046307  !important ; */
+  background-color: #3B2F2F  !important ;
+  border-top: 1px solid #ddd;
+  border-radius: 4px;
+  color: #fff;
+  display:block;
+}
+.about-heading {
+  font-size: 72px;
+  font-weight: 650;
+  padding:100px;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  color: white;
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888, 0 3px 0 #777777,
+    0 4px 0 #666666, 0 5px 0 #555555, 0 6px 0 #444444, 0 7px 0 #333333,
+    0 8px 7px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-heading {
+  font-size: 72px;
+  font-weight: 650;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+ font-family: "Times New Roman", Times, serif;
+  color: #00cc78 !important;
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888, 0 3px 0 #777777,
+    0 4px 0 #666666, 0 5px 0 #555555, 0 6px 0 #444444, 0 7px 0 #333333,
+    0 8px 7px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 60;
+}
+.skillContainer{
+  min-width:18rem;
+  justify-content:center !important;
+}
+.skill-header {
+  font-size: 22px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+ color: transparent !important; 
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Times New Roman", Times, serif;
+  color:#00cc78 !important;
+
+}
+.skillImg{
+  max-width: 400px !important;
+  max-height:500px;
+  padding-left:100px;
+  padding-right:100px;
+  align-item: center !important;
+  justify-content: center !important;
+}
+.skill-list {
+  font-size: 18px;
+  font-weight: 200;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  color: white !important;
+}
+.tools {
+  content-align: center;
+  justify-content: center;
+}
+ .tech-icon a {
+  font-size: 1.5em !important;
+  margin: 3px !important;
+  padding: 3px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(11, 102, 35, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+  color:#00cc78 !important;
+  justify-content:center;
+  text-align:center
+}
+/* @media(max-width: 700px){
+  .tech-icon a, .skill-list {
+    display:block !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+} */
+
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
+  font-size: 1em !important;
+  margin: 3px !important;
+  padding: 3px !important;
   opacity: 0.93 !important;
   border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
@@ -605,11 +745,13 @@ button:focus {
 
 .resume-section {
   position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  padding-top: 100px !important;
+  padding-bottom: 25px !important;
+  /* background-image: var(--section-background-color) !important; */
   color: white !important;
+  z-index: 1;
 }
+
 
 .resume {
   padding-top: 50px;
@@ -728,7 +870,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #00af99 !important; 
+  background-color: #00af99 !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -749,4 +891,68 @@ button:focus {
   padding: 0;
   top: 0;
   left: 0;
+}
+
+/* Contact page */
+.mailContent {
+  color: #00af99;
+}
+.contact_section {
+  position: relative;
+  z-index: 1;
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg);  */
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 60px !important;
+  padding-top: 30px !important;
+  text-align: center;
+}
+.contact-submition{
+  color: #00af99;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.contact_content {
+  padding: 7rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
+}
+.contact_title {
+  padding: 1.5rem 0 1.5rem !important;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.main-contact {
+  text-align: center;
+}
+.contact_form {
+  padding: 2rem 0 1.5rem !important;
+  color: black;
+  text-align: left;
+}
+
+.form_title {
+  color: #00af99;
+}
+.form_container {
+  padding: 2rem 0 1.5rem !important;
+}
+
+.inner_frm_container {
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  width: 30rem;
+  padding-bottom: 30px;
+}
+@media(max-width:480px){
+  .inner_frm_container{
+    width:100%;
+  }
+}
+
+.ctct_btn {
+  margin: 1rem !important;
 }

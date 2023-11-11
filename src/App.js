@@ -4,7 +4,7 @@ import "./style.css";
 import Home from "./components/Home/Home";
 import NavBar from "./components/Navbar";
 import Project from "./components/Projects";
-import About from "./components/About";
+import About from "./components/About/About";
 import Resume from "./components/Resume";
 import Footer from "./components/footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -19,7 +19,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
@@ -31,15 +30,14 @@ function App() {
     <Router>
       <div className="App-header" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
-        <ScrollToTop />
-        <Routes>
+        <ScrollToTop /> 
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/resume" element={<Resume />} /> 
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
-
         </Routes>
         <Footer/>
       </div>

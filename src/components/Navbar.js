@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../Assets/logo3.png";
-
+import logo from "../Assets/logo111.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
@@ -41,7 +40,8 @@ const NavBar = () => {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo App-logo" alt="brand" />
+         <img src={logo} className="img-fluid logo App-logo" alt="brand" /> 
+          {/* <h1>GK.</h1> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

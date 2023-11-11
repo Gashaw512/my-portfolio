@@ -1,21 +1,21 @@
 
 import { Col, Image, Row } from "react-bootstrap";
-import profile from "../../Assets/profile1.jpg";
+import profile from "../../Assets/robot.png";
 
 const AboutHeader = () => {
   return (
-    <Row>
+    <Row className="home-header">
       <Col md={5} style={{ paddingBottom: 20 }}>
         <Image
           src={profile}
-          // roundedCircle
+          roundedCircle
           width={200}
           height={300}
           alt="Profile picture"
         />
         {/* </Tilt> */}
       </Col>
-      <Col md={7} className="home-header">
+      <Col md={7} >
         <h1 style={{ paddingBottom: 15 }} className="about-heading">
           Who Am I{" "}
           <span className="wave" role="img" aria-labelledby="wave">

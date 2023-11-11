@@ -7,18 +7,15 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import pdf from "../Assets/Gashaw_Kidanu_CV.pdf"
 import Particle from "./Particle";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-
 const Resume = ()=>{
     const [width, setWidth] = useState(1200);
     useEffect(() => {
       setWidth(window.innerWidth);
     }, []);
     return(
-        <div>
         <Container fluid className="resume-section">
           {/* <Particle /> */}
-          {/* <Particle/> */}
+          <Particle/>
           <Row style={{ justifyContent: "center", position: "relative" }}>
             <Button
               variant="primary"
@@ -48,7 +45,6 @@ const Resume = ()=>{
             </Button>
           </Row>
         </Container>
-      </div>
     )
 }
 

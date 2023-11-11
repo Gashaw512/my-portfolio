@@ -7,10 +7,10 @@ const About = () => {
   return (
     <Container fluid className="about-section">
       <Particle />
-      <Container className="about-content justify-content-center">
+      <Container className="about-content">
         <AboutHeader />
-        <AboutCard />
       </Container>
+       <AboutCard />
     </Container>
   );
 };
